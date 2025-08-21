@@ -5,13 +5,10 @@ import AppLayout from './components/layouts/AppLayout';
 import TasksLayout from './components/layouts/TasksLayout';
 
 // Pages
-import BacklogPage from './components/pages/BacklogPage';
 import CalendarPage from './components/pages/CalendarPage';
 import HabitsPage from './components/pages/HabitsPage';
 import LandingPage from './components/pages/LandingPage';
-import TaskListPage from './components/pages/TaskListPage';
-import TodayPage from './components/pages/TodayPage';
-import WeekPage from './components/pages/WeekPage';
+import TasksPage from './components/pages/TasksPage';
 
 // Components
 import Footer from './components/UI/common/footer/Footer';
@@ -27,15 +24,14 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="webapp" element={<AppLayout />} >
+          <Route path="tasks" element={<TasksLayout />}>
+            <Route path="today" element={<TasksPage header="Today’s Tasks" filter="today" />} />
+            <Route path="week" element={<TasksPage header="This Week’s Tasks" filter="week" />} />
+            <Route path="backlog" element={<TasksPage header="Backlog" filter="all" />} />
             <Route index element={<Navigate to="today" replace />} />
-            {/* Task routes */}
-            <Route path="tasks" element={<TasksLayout />} >
-              <Route index element={<Navigate to="today" replace />} />
-              <Route path="today" element={<TodayPage />} />
-              <Route path="week" element={<WeekPage />} />
-              <Route path="backlog" element={<BacklogPage />} />
-              <Route path="list/:listId" element={<TaskListPage />} />
-            </Route>
+          </Route>
+              {/* // TODO ADD THIS BACK
+              <Route path="list/:listId" element={<TaskListPage />} /> */}
 
             <Route path="calendar" element={<CalendarPage />} />
             <Route path="habits" element={<HabitsPage />} />
