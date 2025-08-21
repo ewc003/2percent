@@ -1,0 +1,31 @@
+.you-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.you-header svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.you-header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 6px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.you-header button + button {
+  margin-left: 10px;
+}
+
+.you-header .welcome {
+  margin-right: 10px;
+  color: #333;
+  font-size: 14px;
+}

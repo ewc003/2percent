@@ -1,0 +1,160 @@
+import { type IPursuit, DIFFICULTY } from "../interfaces/pursuits";
+
+export const mockPursuits: IPursuit[] = [
+  {
+    id: "1",
+    goal: "Become LeetCode Master",
+    tasks: [
+      {
+        id: "1",
+        description: "Do Easy LeetCode questions",
+        totalPoints: 3,
+        difficulty: DIFFICULTY.EASY,
+        startDate: new Date(),
+        endDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000), // +1 day
+        completed: 1,
+      },
+      {
+        id: "1",
+        description: "Do Medium LeetCode questions",
+        totalPoints: 3,
+        difficulty: DIFFICULTY.MEDIUM,
+        startDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000), // +3 days
+        completed: 0,
+      },
+      {
+        id: "1",
+        description: "Do Hard LeetCode questions",
+        totalPoints: 3,
+        difficulty: DIFFICULTY.HARD,
+        startDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // +7 days
+        completed: 2,
+      },
+    ],
+  },
+  {
+    id: "2",
+    goal: "Become a React Master",
+    tasks: [
+      {
+        id: "1",
+        description: "Create a counter with React",
+        difficulty: DIFFICULTY.EASY,
+        startDate: new Date(),
+        endDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "1",
+        description: "Create a contribution graph like Github",
+        difficulty: DIFFICULTY.MEDIUM,
+        startDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "1",
+        description: "Create an interactive calendar with React",
+        difficulty: DIFFICULTY.HARD,
+        startDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+    ],
+  },
+  {
+    id: "3",
+    goal: "Learn TypeScript",
+    tasks: [
+      {
+        id: "1",
+        description: "Read TypeScript documentation",
+        difficulty: DIFFICULTY.EASY,
+        startDate: new Date(),
+        endDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "2",
+        description: "Convert a small React project to TypeScript",
+        difficulty: DIFFICULTY.MEDIUM,
+        startDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+    ],
+  },
+  {
+    id: "4",
+    goal: "Master CSS and Layouts",
+    tasks: [
+      {
+        id: "1",
+        description: "Practice Flexbox and Grid layouts",
+        difficulty: DIFFICULTY.EASY,
+        startDate: new Date(),
+        endDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "2",
+        description: "Build a responsive multi-section webpage",
+        difficulty: DIFFICULTY.MEDIUM,
+        startDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "3",
+        description: "Create a CSS animation library",
+        difficulty: DIFFICULTY.HARD,
+        startDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+    ],
+  },
+  {
+    id: "5",
+    goal: "Learn Node.js",
+    tasks: [
+      {
+        id: "1",
+        description: "Read Node.js official docs",
+        difficulty: DIFFICULTY.EASY,
+        startDate: new Date(),
+        endDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "2",
+        description: "Build a simple REST API",
+        difficulty: DIFFICULTY.MEDIUM,
+        startDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+      {
+        id: "3",
+        description: "Add authentication and testing",
+        difficulty: DIFFICULTY.HARD,
+        startDate: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000),
+        endDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        completed: 0,
+        totalPoints: 3,
+      },
+    ],
+  },
+];
